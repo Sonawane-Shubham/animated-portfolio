@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
@@ -37,7 +37,9 @@ const Navbar = () => {
         className="max-w-[1200px] mx-auto  flex  justify-between text-gray-200
         text-xl items-center px-6 md:px-10 h-20"
       >
-        <a href="#" className="text-2xl font-medium">Shubham Sonawane</a>
+        <a href="#" className="text-2xl font-medium">
+          Shubham Sonawane
+        </a>
 
         <ul className="text-lg hidden md:flex gap-12 z-10 cursor-pointer">
           <li>

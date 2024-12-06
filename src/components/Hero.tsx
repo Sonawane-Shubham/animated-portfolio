@@ -1,21 +1,13 @@
-import React from "react";
 import profilepic from "../assets/profpic.jpg";
-import { TypeAnimation } from "react-type-animation";
-import ShinyEffect from "./ShinyEffect";
+
+// import ShinyEffect from "./ShinyEffect";
 import {
   AiOutlineGithub,
   AiOutlineInstagram,
-  AiOutlineLink,
   AiOutlineLinkedin,
 } from "react-icons/ai";
-import { SiLeetcode } from "react-icons/si";
-import { FiDownload } from "react-icons/fi";
 import { IoMdCloudDownload } from "react-icons/io";
-
-import { BsPersonCheck } from "react-icons/bs";
-import { MdPersonSearch } from "react-icons/md";
 import { BsPersonCheckFill } from "react-icons/bs";
-
 import { TbBrandLeetcode } from "react-icons/tb";
 
 import {
@@ -163,10 +155,6 @@ const Hero = () => {
         <DiReact className="text-blue-500 mx-2" />
         <DiNodejsSmall className="text-green-500 mx-2" />
       </motion.div>
-
-      {/* <div className="absolute inset-0 hidden md:block ">
-        <ShinyEffect left={0} top={0} size={1400} />
-      </div> */}
     </div>
   );
 };
