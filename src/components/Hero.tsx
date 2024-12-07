@@ -100,7 +100,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-4">
               <a
-                href="shubham_sonawane_resume_8551804947.pdf"
+                href="/shubham_sonawane_resume_8551804947.pdf"
                 download
                 className=""
               >

@@ -3,13 +3,18 @@ import Reveal from "./Reveal";
 
 const experiences = [
   {
+    position: "Software Engineer",
     company: "Aperra Software Solution, Nagpur, Maharashtra",
+
     period: "Jan 2024 - Present",
+    tech: ["HTMLC", "CSS", "Tailwind Css", "JS", "ReactJS", "Redux", "NextJS"],
     description: "Description of your experience in this company.",
   },
   {
+    position: "Software Engineer",
     company: "Aperra Software Solution, Nagpur, Maharashtra",
     period: "Jan 2024 - Present",
+    tech: ["HTMLC", "CSS", "Tailwind Css", "JS", "ReactJS", "Redux", "NextJS"],
     description: "Description of your experience in this company.",
   },
 ];
@@ -33,10 +38,25 @@ const Experience = () => {
                     hover:shadow-xl transition-shadow duration-300 bg-purple-700/10"
             >
               <h2 className="text-gray-100 text-2xl font-semibold mb-1">
+                {experience.position}
+              </h2>
+              <h2 className="text-gray-200 text-xl font-semibold mb-1">
                 {experience.company}
               </h2>
-              <p className="text-gray-300">{experience.period}</p>
-              <p className="text-gray-400 mt-4">{experience.description}</p>
+              <p className="text-gray-400 mb-2">{experience.period}</p>
+              <p className="text-gray-400 mb-3">{experience.description}</p>
+
+              <p className="text-gray-400">
+                <span className="text-gray-300">Tech : </span>
+                {experience.tech.map((item: string, index: number) => (
+                  <>
+                    <span className="text-gray-300">{item}</span>
+                    {index < experience.tech.length && (
+                      <span className="text-gray-300 mx-1">|</span>
+                    )}
+                  </>
+                ))}
+              </p>
             </motion.div>
           </Reveal>
         ))}
