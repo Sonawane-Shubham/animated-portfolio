@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
+import Project from "./components/Project";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Experience />
       <Education/>
+      <Project/>
       <Footer />
     </div>
   );

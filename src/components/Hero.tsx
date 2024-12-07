@@ -21,8 +21,18 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="max-w-[1200px] mx-auto  mt-32 md:mt-40 px-6 md:px-10 relative  ">
+    <div className="max-w-[1200px] mx-auto  mt-32 md:mt-40 px-4 md:px-10 relative  ">
       <div className="grid md:grid-cols-2 place-content-center md:place-content-start  gap-8">
+        <div className="w-full flex md:hidden  justify-center items-center md:justify-end">
+          <motion.img
+            src={profilepic}
+            className="w-80  h-80 rounded-full"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          />
+        </div>
         <motion.div
           className="text-center md:text-start"
           initial={{ opacity: 0, y: -50 }}
@@ -129,7 +139,7 @@ const Hero = () => {
             </div>
           </motion.div>
         </motion.div>
-        <div className="w-full flex  justify-center items-center md:justify-end">
+        <div className="w-full hidden md:flex  justify-center items-center md:justify-end">
           <motion.img
             src={profilepic}
             className="w-80  h-80 rounded-full"

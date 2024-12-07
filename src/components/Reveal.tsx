@@ -15,7 +15,7 @@ const Reveal = ({ children}:any) => {
   }, [isInView, mainControls]);
 
   return (
-    <div ref={ref} style={{ position: "relative", width:"100%", overflow: "hidden" }} className="mb-5">
+    <div ref={ref} style={{ position: "relative", width:"100%", overflow: "hidden" }} className="mb-6">
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },

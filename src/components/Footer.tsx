@@ -3,9 +3,9 @@ import { FaGithubSquare, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="max-w-[1200px] mx-auto">
-      <div className="w-full px-6 md:px-10 py-6 flex flex-col md:flex-row items-center md:items-end md:justify-between text-sm md:text-lg mt-12">
+      <div className="w-full px-4 md:px-10 py-6 flex flex-col md:flex-row items-center md:items-end md:justify-between text-sm md:text-lg mt-12">
         <div className="mb-3 md:mb-0">
-          <h3 className="text-3xl md:text-4xl text-center md:text-start text-gray-200 font-semibold">
+          <h3 className="text-xl sm:text-2xl md:text-3xl text-center md:text-start text-gray-200 font-semibold">
             Shubham Sonawane
           </h3>
         </div>

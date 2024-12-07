@@ -21,7 +21,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div className="max-w-[1200px] px-6 md:px-10 mx-auto">
+    <div className="max-w-[1200px] px-4 md:px-10 mx-auto">
       <h1 className="text-4xl text-gray-200 text-center md:text-start font-bold  mb-12">
         Experience
       </h1>
@@ -34,7 +34,7 @@ const Experience = () => {
               whileInView="visible"
               viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 1 }}
-              className=" w-full border border-purple-600 p-6 rounded-lg shadow-md
+              className=" w-full border border-purple-600 p-4 md:p-6 rounded-lg shadow-md
                     hover:shadow-xl transition-shadow duration-300 bg-purple-700/10"
             >
               <h2 className="text-gray-100 text-2xl font-semibold mb-1">
