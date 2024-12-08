@@ -10,6 +10,7 @@ import { FaGithub } from "react-icons/fa";
 import { AiOutlineGlobal } from "react-icons/ai";
 
 import Reveal from "./Reveal";
+import ProjectDetailsModal from "../modals/ProjectDetailsModal";
 
 const projects = [
   {
@@ -26,6 +27,7 @@ const projects = [
     title: "Project #2",
     description:
       "A fullstack application built with Node.js and MongoDB A fullstack application built with Node.js and MongoDB  A fullstack application built with Node.js and MongoDB  A fullstack application built with Node.js and MongoDB  ",
+    skills: ["HTML", "CSS", "JS", "React", "Redux"],
     links: {
       site: "#",
       github: "#",
@@ -121,9 +123,21 @@ type TProjectType = {
 
 const Project = () => {
   const [limit, setLimit] = useState<number>(6);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const [selectedProject, setSelectedProject] = useState<TProjectType | null>(
     null
   );
+
+  const handleCloseProjectModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
+
+  const handleOpenProjectModal = (project: any) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
 
   console.log(selectedProject);
   return (
@@ -142,7 +156,9 @@ const Project = () => {
               >
                 <div
                   className="w-full p-4 cursor-pointer"
-                  onClick={() => setSelectedProject(project)}
+                  onClick={() => {
+                    handleOpenProjectModal(project);
+                  }}
                 >
                   <img
                     src={project.img}
@@ -159,7 +175,9 @@ const Project = () => {
                     `}
                     <span
                       className="text-purple-400 font-medium cursor-pointer "
-                      onClick={() => setSelectedProject(project)}
+                      onClick={() => {
+                        handleOpenProjectModal(project);
+                      }}
                     >
                       Read More ...
                     </span>
@@ -194,6 +212,14 @@ const Project = () => {
             Load More
           </button>
         </div>
+      )}
+
+      {isModalOpen && (
+        <ProjectDetailsModal
+          isOpen={isModalOpen}
+          onClose={handleCloseProjectModal}
+          projectData={selectedProject}
+        />
       )}
     </div>
   );
