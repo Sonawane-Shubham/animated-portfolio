@@ -40,7 +40,7 @@ const Experience = () => {
               <h2 className="text-gray-100 text-xl font-bold">
                 {experience.position}
               </h2>
-              <h2 className="text-gray-200 text-lg font-semibold mb-1">
+              <h2 className="text-gray-300 text-xl medium mb-1">
                 {experience.company}
               </h2>
               <p className="text-base text-gray-400 mb-2">
@@ -48,9 +48,26 @@ const Experience = () => {
               </p>
               <p className="text-base text-gray-400 mb-3">
                 {experience.description}
+              
               </p>
+              <div className="text-base text-gray-400 flex items-center gap-1 flex-wrap">
+                <span className=" text-gray-400">Skills : </span>
+                {experience.tech.map((item: string, index: number) => (
+                  <>
+                    <span
+                      key={index}
+                      className="text-gray-400  text-nowrap"
+                    >
+                      {item}
+                    </span>
+                    {index < experience?.tech.length-1 && (
+                      <div className="w-[1px] h-4 bg-gray-400"></div>
+                    )}
+                  </>
+                ))}
+              </div>
 
-              <p className="text-base text-gray-400 flex items-center gap-2 flex-wrap">
+              {/* <p className="text-base text-gray-400 flex items-center gap-2 flex-wrap">
                 <span className="text-gray-400">Skills </span>
                 {experience.tech.map((item: string, index: number) => (
                   <span
@@ -60,7 +77,7 @@ const Experience = () => {
                     {item}
                   </span>
                 ))}
-              </p>
+              </p> */}
             </motion.div>
           </Reveal>
         ))}

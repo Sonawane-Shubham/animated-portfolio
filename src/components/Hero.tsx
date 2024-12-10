@@ -93,7 +93,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.5 }}
             className="flex flex-col items-center md:items-start gap-y-4 my-4 md:mb-0"
           >
-            <div className="flex gap-2 flex-row text-3xl md:text-4xl text-purple-400 z-20">
+            <div className="flex gap-2 flex-row text-4xl text-purple-400 z-20">
               <motion.a whileHover={{ scale: 1.2 }} href="#">
                 <AiOutlineGithub />
               </motion.a>
@@ -120,7 +120,7 @@ const Hero = () => {
                     scale: 1.05,
                     boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
                   }}
-                  className="w-fit flex items-center justify-center px-4 py-3 z-10 cursor-pointer font-medium text-gray-200  border border-purple-400 rounded-md"
+                  className="w-fit flex items-center justify-center px-4 py-3 z-10 cursor-pointer md:font-medium text-gray-200  border border-purple-400 rounded-md"
                 >
                   Download CV <IoMdCloudDownload className="w-6 h-5 ml-2" />
                 </motion.button>
@@ -131,7 +131,7 @@ const Hero = () => {
                     scale: 1.05,
                     boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
                   }}
-                  className="w-fit flex items-center justify-center px-4 py-3 z-10 cursor-pointer font-medium text-gray-200  border border-purple-400 rounded-md"
+                  className="w-fit flex items-center justify-center px-4 py-3 z-10 cursor-pointer md:font-medium text-gray-200  border border-purple-400 rounded-md"
                 >
                   Hire Me
                   <BsPersonCheckFill className="w-5 h-4 mb-0.5 ml-2" />

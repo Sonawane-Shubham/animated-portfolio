@@ -34,12 +34,12 @@ const Education = () => {
               className=" w-full border border-purple-600 p-4 md:p-6 rounded-lg shadow-md
                     hover:shadow-xl transition-shadow duration-300 bg-purple-700/10"
             >
-              <h2 className="text-gray-200 text-xl font-bold">
-                {education.collegeName}
-              </h2>
-              <p className="text-gray-300">{`${education.degreeName}`}</p>
+              <h2 className="text-gray-200 text-xl font-bold">{`${education.degreeName}`}</h2>
+              <p className="text-gray-300">{education.collegeName}</p>
               <p className="text-base text-gray-300">{education.period}</p>
-              <p className="text-base text-gray-300">Grade : {education.grade}</p>
+              <p className="text-base text-gray-300">
+                Grade : {education.grade}
+              </p>
             </motion.div>
           </Reveal>
         ))}
