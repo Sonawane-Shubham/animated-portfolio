@@ -1,5 +1,12 @@
 import { FaGithubSquare, FaInstagram } from "react-icons/fa";
 
+import {
+
+  AiOutlineLinkedin,
+} from "react-icons/ai";
+
+import { TbBrandLeetcode } from "react-icons/tb";
+
 const Footer = () => {
   return (
     <footer className="max-w-[1200px] mx-auto">
@@ -19,16 +26,16 @@ const Footer = () => {
 
         <div className="">
           <div className="flex justify-center md:justify-end flex-row gap-3 text-gray-400 text-3xl mb-2">
-            <a href="#">
+            <a href="https://github.com/Sonawane-Shubham">
               <FaGithubSquare />
             </a>
-            <a href="#">
-              <FaInstagram />
+            <a href="https://leetcode.com/u/shubham_sonawane/">
+              <TbBrandLeetcode />
             </a>
-            <a href="#">
-              <FaGithubSquare />
+            <a href="https://www.linkedin.com/in/shubham-sonawane-77b749192/">
+              <AiOutlineLinkedin />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/shubham_sonawane47/?hl=en">
               <FaInstagram />
             </a>
           </div>

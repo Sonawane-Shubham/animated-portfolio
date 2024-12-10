@@ -94,18 +94,30 @@ const Hero = () => {
             className="flex flex-col items-center md:items-start gap-y-4 my-4 md:mb-0"
           >
             <div className="flex gap-2 flex-row text-4xl text-purple-400 z-20">
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                href="https://github.com/Sonawane-Shubham"
+              >
                 <AiOutlineGithub />
               </motion.a>
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                href="https://leetcode.com/u/shubham_sonawane/"
+              >
                 <TbBrandLeetcode />
               </motion.a>
 
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                href="https://www.linkedin.com/in/shubham-sonawane-77b749192/"
+              >
                 <AiOutlineLinkedin />
               </motion.a>
 
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+              <motion.a
+                whileHover={{ scale: 1.2 }}
+                href="https://www.instagram.com/shubham_sonawane47/?hl=en"
+              >
                 <AiOutlineInstagram />
               </motion.a>
             </div>
