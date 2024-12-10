@@ -142,7 +142,7 @@ const Project = () => {
   console.log(selectedProject);
   return (
     <div className="max-w-[1200px] mx-auto px-4 md:px-10 " id="portfolio">
-      <h2 className="text-3xl text-center md:text-start font-bold text-gray-200  mt-12 mb-10 md:mb-12">
+      <h2 className="text-2xl md:text-3xl text-center md:text-start font-bold text-gray-200  mt-12 mb-10 md:mb-12">
         Portfolio
       </h2>
       <div className="w-full  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -167,10 +167,10 @@ const Project = () => {
                   />
                 </div>
                 <div className="w-full  p-4 flex flex-col justify-center">
-                  <h3 className="text-2xl font-semibold text-gray-200 mb-4">
+                  <h3 className="text-xl font-semibold text-gray-200 mb-4">
                     {project.title}
                   </h3>
-                  <p className="text-base text-gray-300 mb-4">
+                  <p className="text-sm text-gray-300 mb-4">
                     {`${project?.description?.slice(0, 180)}
                     `}
                     <span

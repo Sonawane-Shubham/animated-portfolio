@@ -1,4 +1,5 @@
 import profilepic from "../assets/profpic.jpg";
+import { TypeAnimation } from "react-type-animation";
 
 // import ShinyEffect from "./ShinyEffect";
 import {
@@ -45,7 +46,7 @@ const Hero = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-gray-200 md:text-5xl text-4xl font-medium tracking-tight mb-3 "
+            className="text-gray-200 md:text-4xl text-3xl font-medium tracking-tight mb-1"
           >
             _hello I Am
           </motion.p>
@@ -55,11 +56,11 @@ const Hero = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-purple-500 md:text-5xl text-4xl font-medium tracking-tight mb-3 "
+            className="text-purple-500 md:text-4xl text-3xl font-medium tracking-tight mb-1"
           >
             Shubham Sonawane
           </motion.p>
-          {/* <TypeAnimation
+          <TypeAnimation
             sequence={[
               "Fullstack Dev",
               1000,
@@ -70,15 +71,15 @@ const Hero = () => {
             ]}
             speed={50}
             repeat={Infinity}
-            className="font-bold text-gray-400 text-xl md:text-5xl italic- mb-4"
-          /> */}
+            className="font-medium text-gray-400 text-2xl "
+          />
 
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1 }}
-            className=" text-center md:text-start text-gray-300 max-w-[300px] md:max-w-[500px] mx-auto  md:mx-0  md:text-xl text-lg mb-4"
+            className=" text-center md:text-start text-gray-300 max-w-[300px] md:max-w-[500px] mx-auto  md:mx-0  md:text-xl text-lg mb-4 mt-2"
           >
             A software developer with a passion for learning and creating
             ,software developer with a passion for learning and creating. with 1
@@ -92,7 +93,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.5 }}
             className="flex flex-col items-center md:items-start gap-y-4 my-4 md:mb-0"
           >
-            <div className="flex gap-2 flex-row text-4xl md:text-5xl text-purple-400 z-20">
+            <div className="flex gap-2 flex-row text-3xl md:text-4xl text-purple-400 z-20">
               <motion.a whileHover={{ scale: 1.2 }} href="#">
                 <AiOutlineGithub />
               </motion.a>

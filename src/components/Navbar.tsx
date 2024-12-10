@@ -37,11 +37,12 @@ const Navbar = () => {
         className="max-w-[1200px] mx-auto  flex  justify-between text-gray-200
         text-xl items-center px-4 md:px-10 h-20"
       >
-        <a href="#" className="text-2xl font-medium">
-          Shubham Sonawane
+        <a href="#" className="text-2xl font-medium overflow-hidden flex items-center">
+          <img src="/ss_logo.png" alt="logo" className="w-10 h-10 border border-purple-500 rounded-full"/>
+         
         </a>
 
-        <ul className="text-lg hidden md:flex gap-12 z-10 cursor-pointer">
+        <ul className="text-lg hidden md:flex gap-8 z-10 cursor-pointer">
           <li>
             <Link to="skills" smooth={true} offset={50} duration={500}>
               About

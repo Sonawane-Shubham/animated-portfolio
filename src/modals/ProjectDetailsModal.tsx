@@ -44,7 +44,7 @@ const ProjectDetailsModal: React.FC<TPtojectDetailsModalProps> = ({
     >
       <div className="w-full">
         <div className="w-full flex items-center justify-between py-3 px-2 bg-purple-500 text-white">
-          <h2 className="text-xl md:text-2xl font-medium">
+          <h2 className="text-xl md:text-2xl font-bold">
             {projectData?.title}
           </h2>
           <button
@@ -77,7 +77,7 @@ const ProjectDetailsModal: React.FC<TPtojectDetailsModalProps> = ({
             )}
           </div>
           <div className="w-full  p-4 pt-0 flex flex-col justify-center">
-            <h3 className="text-2xl font-semibold text-gray-500 mb-2">
+            <h3 className="text-xl font-bold text-gray-500 mb-2">
               {projectData.title}
             </h3>
 
