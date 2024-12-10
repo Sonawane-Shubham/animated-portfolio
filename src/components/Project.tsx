@@ -141,7 +141,7 @@ const Project = () => {
 
   console.log(selectedProject);
   return (
-    <div className="max-w-[1200px] mx-auto px-4 md:px-10 " id="portfolio">
+    <div className="max-w-[1200px] mx-auto px-4 md:px-10 " id="#project">
       <h2 className="text-2xl md:text-3xl text-center md:text-start font-bold text-gray-200  mt-12 mb-10 md:mb-12">
         Portfolio
       </h2>

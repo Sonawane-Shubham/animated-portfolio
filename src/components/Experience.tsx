@@ -21,7 +21,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div className="max-w-[1200px] px-4 md:px-10 mx-auto">
+    <div className="max-w-[1200px] px-4 md:px-10 mx-auto" id="#experience">
       <h2 className="text-2xl md:text-3xl text-center md:text-start font-bold text-gray-200  mt-12 mb-10 md:mb-12">
         Experience
       </h2>
@@ -43,16 +43,22 @@ const Experience = () => {
               <h2 className="text-gray-200 text-lg font-semibold mb-1">
                 {experience.company}
               </h2>
-              <p className="text-base text-gray-400 mb-2">{experience.period}</p>
-              <p className="text-base text-gray-400 mb-3">{experience.description}</p>
+              <p className="text-base text-gray-400 mb-2">
+                {experience.period}
+              </p>
+              <p className="text-base text-gray-400 mb-3">
+                {experience.description}
+              </p>
 
-              <p className="text-base text-gray-400">
-                <span className="text-gray-400">Skills : </span>
+              <p className="text-base text-gray-400 flex items-center gap-2 flex-wrap">
+                <span className="text-gray-400">Skills </span>
                 {experience.tech.map((item: string, index: number) => (
-                 
-                    <span key={index} className="text-gray-400 border border-purple-400 px-2 py-1 rounded-sm mr-2">{item}</span>
-                   
-                
+                  <span
+                    key={index}
+                    className="text-gray-400 border border-purple-400 px-2 py-1 rounded-sm text-nowrap"
+                  >
+                    {item}
+                  </span>
                 ))}
               </p>
             </motion.div>
